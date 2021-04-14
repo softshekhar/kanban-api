@@ -16,7 +16,7 @@ import java.util.Collection;
 
 @RestController
 @RequestMapping("/tasks")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin
 public class TaskController {
 
     @Value("${spring.datasource.url}")
