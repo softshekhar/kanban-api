@@ -20,11 +20,10 @@
 *.tar
 *.zip
 
-# Logs and databases #
+# Logs#
 ######################
 *.log
-*.sql
-*.sqlite
+
 
 # OS generated files #
 ######################
@@ -84,4 +83,5 @@ fabric.properties
 /target/
 
 Procfile
+src/main/resources/application-local.properties
 
