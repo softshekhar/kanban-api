@@ -4,7 +4,7 @@ This is a sample SPRING BOOT CRUD Application to Add/Update/Delete/Get tasks
 # Instructions
 1. Open pom.xml with Intelij Idea or Eclipse.
 2. Run Main.java
-3. Open browser on http://localhost:[port] mentioned in application.properties under resources
+3. Open browser on http://[ip of localhost]:[port] port as mentioned in application.properties under resources
 4. Frontent for this app is on https://github.com/softshekhar/kanban-frontend
 
 # Instructions for running as docker container(optional)
