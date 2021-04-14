@@ -8,9 +8,9 @@ This is a sample SPRING BOOT CRUD Application to Add/Update/Delete/Get tasks
 4. Frontent for this app is on https://github.com/softshekhar/kanban-frontend
 
 # Instructions for running as docker container(optional)
-1. build image using below command 
+1. build image using below command\
 ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=kanban-api
-2. run image using below command
+2. run image using below command\
 docker run -m 1G -p [port number on Docker host]:[port number on docker container] kanban-api
 
 # Dependencies
