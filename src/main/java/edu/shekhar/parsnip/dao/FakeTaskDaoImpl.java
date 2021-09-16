@@ -8,10 +8,13 @@ import org.springframework.stereotype.Repository;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Logger;
 
 @Repository
 @Qualifier("fakeData")
 public class FakeTaskDaoImpl implements TaskDao {
+
+    static Logger logger = Logger.getLogger(FakeTaskDaoImpl.class.getName());
 
     private static Map<Integer, Task> tasks;
     private static Integer keyId;
@@ -31,7 +34,9 @@ public class FakeTaskDaoImpl implements TaskDao {
 
     @Override
     public Collection<Task> getAllTasks(){
-        return this.tasks.values();
+        Collection<Task>  tasks = this.tasks.values();
+        logger.info(tasks.toString());
+        return tasks;
     }
 
     @Override
